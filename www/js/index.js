@@ -17,10 +17,10 @@ var app = {
         document.getElementById('contentOptimizer').addEventListener('click', contentOptimizer);
         document.getElementById('smartRecommendation').addEventListener('click', getSmartRecommendation);
         document.getElementById('signUpConfirmation').addEventListener('click', signUpConfirmation);
-        document.getElementById('gdprFalse').addEventListener('click', gdprFalse);
         document.getElementById('cartCleared').addEventListener('click', cartCleared);
         document.getElementById('login').addEventListener('click', login);
         document.getElementById('logout').addEventListener('click', logout);
+        document.getElementById('startTrackingGeofence').addEventListener('click', startTrackingGeofence);
         initSDK();
 
         currentUser = window.Insider.getCurrentUser();
@@ -28,7 +28,7 @@ var app = {
 };
 
 async function initSDK() {
-    await window.Insider.init('your_partner_name', 'your_app_group',
+    await window.Insider.init('shopbagg', 'group.com.useinsider.mobile-ios',
         (callback) => {
             switch ((callback.result || {}).type) {
                 case window.Insider.callbackType.NOTIFICATION_OPEN:
@@ -61,12 +61,12 @@ async function initSDK() {
 
 }
 
-function signUpConfirmation() {
-    window.Insider.signUpConfirmation();
+function startTrackingGeofence() {
+    window.Insider.startTrackingGeofence();
 }
 
-function gdprFalse() {
-    window.Insider.setGDPRConsent(false);
+function signUpConfirmation() {
+    window.Insider.signUpConfirmation();
 }
 
 function cartCleared() {
