@@ -61,101 +61,7 @@ async function initSDK() {
 
 }
 
-//Silinecek
-async function nullCheck() {
-    currentUser?.setName(null)
-        .setSurname(null)
-        .setAge(null)
-        .setGender(null)
-        .setBirthday(null)
-        .setEmailOptin(null)
-        .setSMSOptin(null)
-        .setPushOptin(null)
-        .setLocationOptin(null)
-        .setWhatsappOptin(null)
-        .setFacebookID(null)
-        .setTwitterID(null)
-        .setLanguage(null)
-        .setLocale(null);
-
-    var identifiers = Insider.identifier();
-    identifiers.addEmail(null);
-    identifiers.addPhoneNumber(null);
-    identifiers.addUserID(null);
-
-    currentUser.setCustomAttributeWithString('string_parameter', null);
-    currentUser.setCustomAttributeWithInt('int_parameter', null);
-    currentUser.setCustomAttributeWithDouble('double_parameter', null);
-    currentUser.setCustomAttributeWithBoolean('bool_parameter', null);
-    currentUser.setCustomAttributeWithDate('date_parameter', null);
-
-    window.Insider.getCurrentUser().setCustomAttributeWithArray('key', null);
-
-    const event2 = await window.Insider
-        .tagEvent(null)
-        ?.addParameterWithInt('int_parameter', null)
-        .build();
-
-    const vListing = await window.Insider.visitListingPage(null);
-
-    createProduct("product1", "Pear", taxonomy, "ImageURL", 0, "TRY")
-        .then(async (product) => {
-            const visitP = await window.Insider.visitProductDetailPage(null);
-
-            const itemP = await window.Insider.itemPurchased('product_id', product);
-
-            const itemAC = await window.Insider.itemAddedToCart(null);
-
-            const res = await window.Insider.visitCartPage(null);
-        });
-
-    const itemR = await window.Insider.itemRemovedFromCart(null);
-
-    var product = await window.Insider.createNewProduct(null,
-        null,
-        null,
-        null,
-        null,
-        null);
-
-    product
-        .setColor(null)
-        .setVoucherName(null)
-        .setVoucherDiscount(null)
-        .setPromotionName(null)
-        .setPromotionDiscount(null)
-        .setSize(null)
-        .setSalePrice(null)
-        .setShippingCost(null)
-        .setQuantity(null)
-        .setStock(null);
-
-    product
-        .setCustomAttributeWithString('string_parameter', null)
-        .setCustomAttributeWithInt('int_parameter', null)
-        .setCustomAttributeWithDouble('double_parameter', null)
-        .setCustomAttributeWithBoolean('bool_parameter', null)
-        .setCustomAttributeWithDate('date_parameter', null);
-
-    product.setCustomAttributeWithArray('array_parameter', null);
-
-    const mData = await window.Insider.getMessageCenterData(null, null, null);
-
-
-    const contentOptimizerInt = await window.Insider.getContentIntWithName('int_variable_name', null, null);
-
-    const contentOptimizerString = await window.Insider.getContentStringWithName('string_variable_name', null, null);
-
-    const contentOptimizerBool = await window.Insider.getContentBoolWithName('bool_variable_name', null, null);
-
-    const smartData = await window.Insider.getSmartRecommendation(null, null, null);
-
-    const smartDataWithProduct = await window.Insider.getSmartRecommendationWithProduct(null, null, null);
-
-}
-
 function signUpConfirmation() {
-    nullCheck();
     window.Insider.signUpConfirmation();
 }
 
@@ -169,7 +75,7 @@ function cartCleared() {
 
 function login() {
     var identifiers = Insider.identifier();
-    identifiers.addEmail('mobile@useinsider.com');
+    identifiers.addEmail('mail@example.com');
     identifiers.addPhoneNumber('+901234567');
     identifiers.addUserID('CRM-ID');
 
