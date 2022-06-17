@@ -34,15 +34,6 @@ async function initSDK() {
                 case window.Insider.callbackType.NOTIFICATION_OPEN:
                     console.log('[INSIDER][NOTIFICATION_OPEN]: ', JSON.stringify(callback.result) || {});
                     break;
-                case window.Insider.callbackType.INAPP_BUTTON_CLICK:
-                    console.log('[INSIDER][INAPP_BUTTON_CLICK]: ', JSON.stringify(callback.result) || {});
-                    break;
-                case window.Insider.callbackType.TEMP_STORE_PURCHASE:
-                    console.log('[INSIDER][TEMP_STORE_PURCHASE]: ', JSON.stringify(callback.result) || {});
-                    break;
-                case window.Insider.callbackType.TEMP_STORE_ADDED_TO_CART:
-                    console.log('[INSIDER][TEMP_STORE_ADDED_TO_CART]: ', JSON.stringify(callback.result) || {});
-                    break;
                 case window.Insider.callbackType.TEMP_STORE_CUSTOM_ACTION:
                     console.log('[INSIDER][TEMP_STORE_CUSTOM_ACTION]: ', JSON.stringify(callback.result) || {});
                     break;
