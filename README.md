@@ -43,7 +43,7 @@
 7. Run the code below to add the plugin to the project.
 
 ```
-cordova plugin add @insider-mobile/cordova-plugin-insider
+cordova plugin add cordova-plugin-insider
 ```
 ### Android
 
