@@ -14,7 +14,7 @@
 3. Add the Android, iOS or both platform to the project if you haven't done this before.
    ```
     cordova platform add android
-    cordova platform add iOS
+    cordova platform add ios
    ```
 
 
