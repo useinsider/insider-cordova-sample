@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-packageName="com.company.app" id="io.cordova.helloCordova" ios-CFBundleIdentifier="com.useinsider.mobile-ios" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="InsiderPlugin">
+        <param name="android-package" value="com.useinsider.cordova.InsiderPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>InsiderDemo</name>
+    <description>Insider Apache Cordova App</description>
+    <author href="https://useinsider.com">
+        Insider
+    </author>
+    <access origin="*" />
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="market:*" />
+    <resource-file src="platforms/android/app/google-services.json" target="platforms/android/app/google-services.json" />
+    <resource-file src="platforms/android/app/agconnect-services.json" target="platforms/android/app/agconnect-services.json" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+    <preference name="GradlePluginGoogleServicesVersion" value="4.3.10" />
+    <preference name="AndroidXEnabled" value="true" />
+</widget>

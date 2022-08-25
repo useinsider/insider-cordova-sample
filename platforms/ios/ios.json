@@ -1,0 +1,122 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "*-Info.plist": {
+        "parents": {
+          "NSLocationWhenInUseUsageDescription": [
+            {
+              "xml": "<string>need location access to find things nearby</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSLocationAlwaysAndWhenInUseUsageDescription": [
+            {
+              "xml": "<string>need location access to find things nearby</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSLocationAlwaysUsageDescription": [
+            {
+              "xml": "<string>need location access to find things nearby</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSUserTrackingUsageDescription": [
+            {
+              "xml": "<string>need access to use data to track user or device</string>",
+              "count": 12
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"InsiderPlugin\"><param name=\"ios-package\" value=\"InsiderPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-insider": {
+      "PACKAGE_NAME": "com.company.app"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.company.app"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-insider.InsiderPlugin",
+      "file": "plugins/cordova-plugin-insider/www/InsiderPlugin.js",
+      "pluginId": "cordova-plugin-insider",
+      "clobbers": [
+        "Insider"
+      ]
+    },
+    {
+      "id": "cordova-plugin-insider.CallbackType",
+      "file": "plugins/cordova-plugin-insider/www/CallbackType.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.ContentOptimizerDataType",
+      "file": "plugins/cordova-plugin-insider/www/ContentOptimizerDataType.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.Gender",
+      "file": "plugins/cordova-plugin-insider/www/Gender.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.Identifier",
+      "file": "plugins/cordova-plugin-insider/www/Identifier.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.Product",
+      "file": "plugins/cordova-plugin-insider/www/Product.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.Event",
+      "file": "plugins/cordova-plugin-insider/www/Event.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.User",
+      "file": "plugins/cordova-plugin-insider/www/User.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.Constants",
+      "file": "plugins/cordova-plugin-insider/www/Constants.js",
+      "pluginId": "cordova-plugin-insider"
+    },
+    {
+      "id": "cordova-plugin-insider.Utils",
+      "file": "plugins/cordova-plugin-insider/www/Utils.js",
+      "pluginId": "cordova-plugin-insider"
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-insider": "1.3.0",
+    "cordova-plugin-whitelist": "1.3.5"
+  }
+}

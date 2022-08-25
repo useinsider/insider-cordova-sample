@@ -1,0 +1,24 @@
+PODS:
+  - InsiderHybrid (1.3.0)
+  - InsiderMobile (12.5.2)
+  - InsiderMobileAdvancedNotification (1.2.1)
+
+DEPENDENCIES:
+  - InsiderHybrid
+  - InsiderMobile
+  - InsiderMobileAdvancedNotification
+
+SPEC REPOS:
+  trunk:
+    - InsiderHybrid
+    - InsiderMobile
+    - InsiderMobileAdvancedNotification
+
+SPEC CHECKSUMS:
+  InsiderHybrid: 48eaedea5c708dbc3b7838f83c440e12e8596a71
+  InsiderMobile: 6c0def28487ac5a994055f042495ab8905e99959
+  InsiderMobileAdvancedNotification: adec892c8fc97d88246e238c74926f4a94f1d803
+
+PODFILE CHECKSUM: e9f485ae0263e632b775ab30912314c777b2f15e
+
+COCOAPODS: 1.11.3
